@@ -1,6 +1,6 @@
 package main
 
-import "github.com/BGrewell/go-iperf"
+import "github.com/willfantom/go-iperf"
 
 func main() {
 	iperf.ExtractBinaries()

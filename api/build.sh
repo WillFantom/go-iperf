@@ -8,7 +8,7 @@ fi
 echo "[+] Building docker container"
 docker image build -t go-iperf-builder:1.0 .
 docker container run --detach --name builder go-iperf-builder:1.0
-docker cp builder:/go/src/github.com/BGrewell/go-iperf/api/go/github.com/BGrewell/go-iperf/api/control.pb.go go/.
+docker cp builder:/go/src/github.com/willfantom/go-iperf/api/go/github.com/willfantom/go-iperf/api/control.pb.go go/.
 echo "[+] Updating of go library complete"
 
 echo "[+] Removing docker container"

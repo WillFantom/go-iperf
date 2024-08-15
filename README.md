@@ -1,6 +1,10 @@
 # go-iperf
 A Go based wrapper around iperf3
 
+> This fork removes the embedded iperf3 binary. Whilst the idea is nice, its
+> easier and more convenient when using multiple platforms and architectures
+> etc, to use an external binary.
+
 ## Basic Usage
 
 basic client setup
@@ -73,9 +77,4 @@ func main() {
 	
 	fmt.Println(c.Report().String())
 }
-```
-
-building binary data package with iperf binaries
-```
-go-bindata -pkg iperf -prefix "embedded/" embedded/
 ```

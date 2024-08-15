@@ -2,8 +2,9 @@ package main
 
 import (
 	"fmt"
-	"github.com/BGrewell/go-iperf"
 	"os"
+
+	"github.com/willfantom/go-iperf"
 )
 
 func main() {

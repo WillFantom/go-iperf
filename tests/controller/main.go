@@ -2,8 +2,9 @@ package main
 
 import (
 	"fmt"
-	"github.com/BGrewell/go-iperf"
 	"log"
+
+	"github.com/willfantom/go-iperf"
 )
 
 func main() {
@@ -33,7 +34,7 @@ func main() {
 		log.Fatal(err)
 	}
 
-	<- iperfCli.Done
+	<-iperfCli.Done
 
 	fmt.Println(iperfCli.Report().String())
 }
